@@ -1,13 +1,22 @@
-<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/92307956-5e15-4575-9da8-5014e164083b" />
+# 🎨 Pixel Art Texturing Bible
 
+> Complete pixel art texturing bible for low-poly 3D models, inspired by Valheim and Wickwild. Works with any AI agent.
 
-# 🎨 Hermes Pixel Art Texturing Bible
-
-> Complete pixel art texturing bible for low-poly 3D models, inspired by Valheim and Wickwild.
+![Pixel Art Texturing](https://github.com/user-attachments/assets/92307956-5e15-4575-9da8-5014e164083b)
 
 ## What is it
 
-A Hermes Agent skill containing everything an agent needs to texture low-poly 3D models with pixel art style: painting techniques, biomes palettes, UV→Engine workflow, procedural automation, and a complete从零tutorial.
+A comprehensive skill containing everything an AI agent needs to texture low-poly 3D models with pixel art style: painting techniques, biomes palettes, UV→Engine workflow, procedural automation, and a complete step-by-step tutorial.
+
+## Compatible Agents
+
+Works with any AI agent that supports skills or markdown context:
+
+- **Hermes Agent** — `hermes skills install` or `/skill pixel-art-texturing-bible`
+- **Claude Code / Claude Desktop** — paste SKILL.md into context or use as reference
+- **ChatGPT / GPT** — paste into custom instructions or project context
+- **Cursor, Windsurf, Cline, Continue, Aider, Codex** — load as project context or reference
+- **Any agent** — the markdown files are universally readable
 
 ## Installation
 
@@ -17,14 +26,43 @@ A Hermes Agent skill containing everything an agent needs to texture low-poly 3D
 hermes skills install https://raw.githubusercontent.com/ramonsamagaio/Hermes-PixelArt-Skill/main/SKILL.md
 ```
 
-### Manual
+### Manual (any agent)
 
 ```bash
-# Clone the repository
 git clone https://github.com/ramonsamagaio/Hermes-PixelArt-Skill.git
 
-# Copy to Hermes skills directory
+# Hermes: copy to skills directory
 cp -r Hermes-PixelArt-Skill ~/.hermes/skills/pixel-art-texturing-bible
+
+# Claude/GPT/Cursor: paste SKILL.md into your project context or .cursorrules
+# Aider: reference the files in your project directory
+```
+
+### For Claude Code
+
+Add to your project's `CLAUDE.md`:
+
+```markdown
+# Pixel Art Texturing Rules
+When texturing low-poly 3D models, follow the pixel art texturing bible:
+- Read SKILL.md for complete workflow
+- Use references/techniques.md for material-specific painting
+- Use references/palettes.md for biome color palettes
+- Use references/workflow.md for UV-to-engine pipeline
+```
+
+### For ChatGPT / GPT
+
+Paste the SKILL.md content into your custom instructions. The agent will follow the workflow when asked to texture 3D models.
+
+### For Cursor / Windsurf / Cline
+
+Add to `.cursorrules`, `.windsurf/rules.md`, or `.cline/rules`:
+
+```markdown
+# Pixel Art Texturing
+When working on 3D model texturing, use the pixel art texturing bible in this project.
+Read SKILL.md for the complete workflow before starting any texture work.
 ```
 
 ## Structure
@@ -45,31 +83,21 @@ pixel-art-texturing-bible/
 
 ## How to Use
 
-### 1. Load the skill
-
-In Hermes chat:
-
+**Hermes:**
 ```
 /skill pixel-art-texturing-bible
 ```
 
-Or ask the agent: *"Load the pixel-art-texturing-bible skill"*
+**Claude/GPT/Cursor:** Paste SKILL.md into context or reference it in your prompt.
 
-### 2. Follow the workflow
+**Any agent:** "Use the pixel art texturing bible in this project to texture this model."
 
-The skill guides you through:
+### Workflow
+
 1. **Preparation** — UV unwrap and template
 2. **Painting** — techniques per material (wood, stone, dirt, foliage)
 3. **Testing** — engine settings (Point filtering, no mipmaps)
 4. **Polishing** — moss, wetness, wear in coherent regions
-
-### 3. Use the palettes
-
-Each Wickwild biome has defined palettes. Copy hex values from `references/palettes.md`.
-
-### 4. Avoid anti-patterns
-
-The 10 most common errors are documented with "good" vs "bad" pixel visual examples.
 
 ## Key Principles
 
@@ -89,23 +117,13 @@ The 10 most common errors are documented with "good" vs "bad" pixel visual examp
 
 ## Quality Checklist
 
-Every texture is rated 1-10 on:
-- Legibility
-- Consistency
-- Aesthetics
-- Technique
-- Performance
+Every texture is rated 1-10 on: Legibility, Consistency, Aesthetics, Technique, Performance.
 
 **Goal: minimum 9/10 in each category.**
 
 ## Compatible Tools
 
-- Aseprite (recommended)
-- GIMP
-- Krita
-- Photoshop
-- Procreate
-- Pixilart (web)
+- Aseprite (recommended), GIMP, Krita, Photoshop, Procreate, Pixilart (web)
 
 ## License
 
@@ -113,4 +131,4 @@ MIT
 
 ---
 
-**Part of the Hermes Agent ecosystem.** See also: [Hermes-Pixelorama-MCP](https://github.com/ramonsamagaio/Hermes-Pixelorama-MCP) for direct Pixelorama integration.
+**Part of the pixel art ecosystem.** See also: [Pixelorama-MCP](https://github.com/ramonsamagaio/Hermes-Pixelorama-MCP) for direct Pixelorama integration from any AI agent.
