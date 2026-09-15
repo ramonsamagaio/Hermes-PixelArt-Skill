@@ -1,3 +1,6 @@
+<img width="1600" height="900" alt="image" src="https://github.com/user-attachments/assets/92307956-5e15-4575-9da8-5014e164083b" />
+
+
 # 🎨 Hermes Pixel Art Texturing Bible
 
 > Complete pixel art texturing bible for low-poly 3D models, inspired by Valheim and Wickwild.
